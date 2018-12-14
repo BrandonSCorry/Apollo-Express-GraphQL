@@ -15,7 +15,7 @@ const SERVER = new ApolloServer({
 
 SERVER.applyMiddleware({ app });
 
-app.get('/', (req, res) => res.send(`Apollo Server Running, access GraphQL playground at http://localhost:${PORT}/graphqln`));
+app.get('/', (req, res) => res.send(`Apollo Server Running, access GraphQL playground at http://localhost:${PORT}/graphql`));
 
 app.listen(PORT, () =>
   console.log(`🚀 GraphQL playground is running at http://localhost:${PORT}/graphql`)
